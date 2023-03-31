@@ -1,0 +1,57 @@
+name: ngo
+description: ngo mobile client
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  retrofit: any
+  logger: any
+  get_it: ^7.2.0
+  dartz: ^0.10.1
+  flutter_bloc: ^8.1.2
+  cupertino_icons: ^1.0.5
+  equatable: ^2.0.5
+  json_serializable: ^6.6.1
+  shared_preferences: ^2.0.18
+  uuid: ^3.0.7
+  flutter_native_splash: ^2.2.19
+  collection: ^1.17.1
+  http_parser: ^4.0.2
+  hexagon: ^0.1.1
+  flutter_svg: ^2.0.4
+  blur: ^3.1.0
+  pie_chart: ^5.3.2
+  intl: ^0.18.0
+  permission_handler: ^10.2.0
+
+dev_dependencies:
+  retrofit_generator: any
+  build_runner: any
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/ui/
+
+  fonts:
+    - family: IranSansLight
+      fonts:
+        - asset: assets/fonts/IRANSansX-Light.ttf
+    - family: IranSansRegular
+      fonts:
+        - asset: assets/fonts/IRANSansX-Regular.ttf
+
+flutter_native_splash:
+  image: assets/images/splash.png
